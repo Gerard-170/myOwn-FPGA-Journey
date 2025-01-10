@@ -1,3 +1,6 @@
+# Oscillator
+set_io	cclk		21
+
 # LEDs
 set_io	led[0]	99
 set_io	led[1]	98
