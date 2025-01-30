@@ -1,0 +1,32 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Jan 29 23:43:05 2025
+[*]
+[dumpfile] "C:\Users\pc\Documents\FPGA-TEST\apio\button-counter-testbench\button-counter_tb.vcd"
+[dumpfile_mtime] "Wed Jan 29 23:35:57 2025"
+[dumpfile_size] 5735
+[savefile] "C:\Users\pc\Documents\FPGA-TEST\apio\button-counter-testbench\button-counter_tb.gtkw"
+[timestart] 0
+[size] 1920 1009
+[pos] -217 -217
+*-18.502890 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] button_counter_uut.
+[sst_width] 197
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@28
+button_counter_uut.clk_source.clk
+button_counter_uut.clk_source.rst
+button_counter_uut.clk_source.out
+button_counter_uut.counter_uut.clk
+button_counter_uut.counter_uut.button
+button_counter_uut.counter_uut.delay1
+button_counter_uut.counter_uut.delay2
+button_counter_uut.counter_uut.delay3
+@22
+button_counter_uut.counter_uut.led[3:0]
+@29
+button_counter_uut.counter_uut.output_signal
+[pattern_trace] 1
+[pattern_trace] 0

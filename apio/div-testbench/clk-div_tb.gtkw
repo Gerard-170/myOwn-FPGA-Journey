@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Sat Jan 25 23:13:30 2025
+[*]
+[dumpfile] "C:\Users\pc\Documents\FPGA-TEST\apio\div-testbench\clk-div_tb.vcd"
+[dumpfile_mtime] "Sat Jan 25 23:10:20 2025"
+[dumpfile_size] 4908
+[savefile] "C:\Users\pc\Documents\FPGA-TEST\apio\div-testbench\clk-div_tb.gtkw"
+[timestart] 0
+[size] 1920 1009
+[pos] -35 -35
+*-17.950953 458370 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] clock_divider_tb.
+[sst_width] 197
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@28
+clock_divider_tb.uut.clk
+@22
+clock_divider_tb.uut.count[4:0]
+@28
+clock_divider_tb.uut.rst
+@29
+clock_divider_tb.uut.out
+[pattern_trace] 1
+[pattern_trace] 0
