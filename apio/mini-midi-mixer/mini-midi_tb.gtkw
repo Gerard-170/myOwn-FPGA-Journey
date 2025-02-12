@@ -1,0 +1,49 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Feb 03 05:53:10 2025
+[*]
+[dumpfile] "C:\Users\pc\Documents\FPGA-TEST\apio\mini-midi-mixer\mini-midi_tb.vcd"
+[dumpfile_mtime] "Mon Feb 03 05:47:30 2025"
+[dumpfile_size] 8083
+[savefile] "C:\Users\pc\Documents\FPGA-TEST\apio\mini-midi-mixer\mini-midi_tb.gtkw"
+[timestart] 0
+[size] 1920 1009
+[pos] -1 -1
+*-18.483725 1763000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] midi_tb.
+[treeopen] midi_tb.uut.
+[sst_width] 222
+[signals_width] 282
+[sst_expanded] 1
+[sst_vpaned_height] 297
+@420
+midi_tb.DURATION
+@28
+midi_tb.clk
+midi_tb.key_one
+midi_tb.key_zero
+midi_tb.uut.key0_debouncer.db_button
+midi_tb.rst
+midi_tb.set
+midi_tb.uut.set_debouncer.db_button
+@29
+midi_tb.uut.led[1:0]
+@22
+midi_tb.uut.my_memory.w_addr[3:0]
+@28
+midi_tb.uut.my_memory.w_data[1:0]
+midi_tb.uut.my_memory.w_en
+@22
+midi_tb.uut.my_memory.r_addr[3:0]
+@28
+midi_tb.uut.my_memory.r_data[1:0]
+midi_tb.uut.my_memory.r_en
+@22
+midi_tb.uut.counter_block.o_led[3:0]
+@28
+midi_tb.uut.state[1:0]
+midi_tb.uut.go
+midi_tb.uut.clk_leds.clk
+midi_tb.uut.clk_leds.out
+[pattern_trace] 1
+[pattern_trace] 0

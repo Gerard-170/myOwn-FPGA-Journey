@@ -1,0 +1,885 @@
+$date
+	Tue Feb 04 21:30:36 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module midi_tb $end
+$var wire 2 ! led [1:0] $end
+$var parameter 32 " DURATION $end
+$var reg 1 # clk $end
+$var reg 1 $ key_one $end
+$var reg 1 % key_zero $end
+$var reg 1 & rst $end
+$var reg 1 ' set $end
+$scope module uut $end
+$var wire 1 # clk $end
+$var wire 1 ( input_key0 $end
+$var wire 1 ) input_key1 $end
+$var wire 1 * input_rst $end
+$var wire 1 + input_set $end
+$var wire 1 $ key_one $end
+$var wire 1 % key_zero $end
+$var wire 1 & rst $end
+$var wire 1 ' set $end
+$var wire 2 , led [1:0] $end
+$var wire 1 - intermediate_go $end
+$var wire 1 . db_set $end
+$var wire 1 / db_key1 $end
+$var wire 1 0 db_key0 $end
+$var wire 4 1 counter_wire [3:0] $end
+$var wire 1 2 clk_led $end
+$var parameter 2 3 STATE_IDLE $end
+$var parameter 2 4 STATE_PLAYING $end
+$var parameter 2 5 STATE_SETTING $end
+$var reg 1 6 go $end
+$var reg 4 7 r_addr [3:0] $end
+$var reg 1 8 r_en $end
+$var reg 2 9 state [1:0] $end
+$var reg 4 : w_addr [3:0] $end
+$var reg 2 ; w_data [1:0] $end
+$var reg 1 < w_en $end
+$scope module clk_leds $end
+$var wire 1 # clk $end
+$var wire 1 * rst $end
+$var parameter 32 = COUNT_WIDTH $end
+$var parameter 33 > MAX_COUNT $end
+$var reg 33 ? count [32:0] $end
+$var reg 1 2 out $end
+$upscope $end
+$scope module counter_block $end
+$var wire 1 2 clk $end
+$var wire 1 6 go_btn $end
+$var wire 1 * rst $end
+$var parameter 4 @ MAX_LED_COUNT $end
+$var parameter 4 A MIN_LED_COUNT $end
+$var parameter 2 B STATE_COUNTING $end
+$var parameter 2 C STATE_DECOUNTING $end
+$var parameter 2 D STATE_IDLE $end
+$var parameter 32 E option $end
+$var reg 1 - done_sig $end
+$var reg 4 F o_led [3:0] $end
+$var reg 2 G state [1:0] $end
+$upscope $end
+$scope module key0_debouncer $end
+$var wire 1 ( button $end
+$var wire 1 # clk $end
+$var wire 1 0 db_button $end
+$var wire 1 * rst $end
+$var reg 1 H delay1 $end
+$var reg 1 I delay2 $end
+$var reg 1 J delay3 $end
+$upscope $end
+$scope module key1_debouncer $end
+$var wire 1 ) button $end
+$var wire 1 # clk $end
+$var wire 1 / db_button $end
+$var wire 1 * rst $end
+$var reg 1 K delay1 $end
+$var reg 1 L delay2 $end
+$var reg 1 M delay3 $end
+$upscope $end
+$scope module my_memory $end
+$var wire 1 # clk $end
+$var wire 4 N r_addr [3:0] $end
+$var wire 1 8 r_en $end
+$var wire 1 * rst $end
+$var wire 4 O w_addr [3:0] $end
+$var wire 2 P w_data [1:0] $end
+$var wire 1 < w_en $end
+$var parameter 8 Q INIT_FILE $end
+$var reg 2 R r_data [1:0] $end
+$var integer 32 S i [31:0] $end
+$upscope $end
+$scope module set_debouncer $end
+$var wire 1 + button $end
+$var wire 1 # clk $end
+$var wire 1 . db_button $end
+$var wire 1 * rst $end
+$var reg 1 T delay1 $end
+$var reg 1 U delay2 $end
+$var reg 1 V delay3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 Q
+b1 E
+b0 D
+b10 C
+b1 B
+b0 A
+b1111 @
+b101 >
+b100000 =
+b10 5
+b1 4
+b0 3
+b10011100010000 "
+$end
+#0
+$dumpvars
+xV
+xU
+xT
+bx S
+bx R
+b0 P
+b0 O
+b0 N
+xM
+xL
+xK
+xJ
+xI
+xH
+bx G
+bx F
+bx ?
+0<
+b0 ;
+b0 :
+bx 9
+08
+b0 7
+06
+x2
+bx 1
+x0
+x/
+x.
+x-
+bx ,
+0+
+0*
+0)
+0(
+1'
+1&
+1%
+1$
+0#
+bx !
+$end
+#41670
+0.
+00
+0/
+0T
+0H
+0K
+b1 9
+1#
+#83340
+b0 9
+02
+b0 ?
+0M
+0L
+0J
+0I
+0V
+0U
+b0 G
+b0 1
+b0 F
+b10000 S
+1*
+0#
+0&
+#125010
+b10000 S
+1#
+#166680
+0#
+#208350
+b10000 S
+1#
+#250020
+0*
+0#
+1&
+#291690
+b1 ?
+b1 9
+1#
+#333360
+1+
+0#
+0'
+#375030
+18
+16
+b10 ?
+1T
+1#
+#416700
+1(
+0#
+0%
+#458370
+1U
+1H
+b11 ?
+b0 !
+b0 ,
+b0 R
+1#
+#500040
+0#
+#541710
+1.
+b100 ?
+1I
+1V
+1#
+#583380
+0#
+#625050
+10
+1J
+b101 ?
+b10 9
+1#
+#666720
+0#
+#708390
+0-
+08
+06
+1<
+b1 ;
+b1 P
+12
+b0 ?
+1#
+#750060
+0+
+0#
+1'
+#791730
+0.
+0T
+b1 ?
+1#
+#833400
+0#
+#875070
+b1 9
+b10 ?
+0U
+1#
+#916740
+0#
+#958410
+0V
+b11 ?
+0<
+b1 :
+b1 O
+18
+16
+1#
+#1000080
+0#
+#1041750
+b1 !
+b1 ,
+b1 R
+b100 ?
+1#
+#1083420
+0#
+#1125090
+b101 ?
+1#
+#1166760
+0#
+#1208430
+02
+b0 ?
+1#
+#1250100
+0#
+#1291770
+b1 ?
+1#
+#1333440
+0#
+#1375110
+b10 ?
+1#
+#1416780
+0#
+#1458450
+b11 ?
+1#
+#1500120
+0#
+#1541790
+b100 ?
+1#
+#1583460
+0#
+#1625130
+b101 ?
+1#
+#1666800
+0#
+#1708470
+b1 G
+12
+b0 ?
+1#
+#1750140
+0#
+#1791810
+b1 ?
+1#
+#1833480
+0#
+#1875150
+b10 ?
+1#
+#1916820
+0#
+#1958490
+b11 ?
+1#
+#2000160
+0#
+#2041830
+b100 ?
+1#
+#2083500
+0#
+#2125170
+b101 ?
+1#
+#2166840
+0#
+#2208510
+02
+b0 ?
+1#
+#2250180
+0#
+#2291850
+b1 ?
+1#
+#2333520
+0#
+#2375190
+b10 ?
+1#
+#2416860
+0#
+#2458530
+b11 ?
+1#
+#2500200
+0#
+#2541870
+b100 ?
+1#
+#2583540
+0#
+#2625210
+b101 ?
+1#
+#2666880
+0#
+#2708550
+b1 1
+b1 F
+12
+b0 ?
+1#
+#2750220
+0#
+#2791890
+b1 ?
+b1 7
+b1 N
+1#
+#2833560
+0#
+#2875230
+b0 !
+b0 ,
+b0 R
+b10 ?
+1#
+#2916900
+0#
+#2958570
+b11 ?
+1#
+#3000240
+0#
+#3041910
+b100 ?
+1#
+#3083580
+0#
+#3125250
+b101 ?
+1#
+#3166920
+0#
+#3208590
+02
+b0 ?
+1#
+#3250260
+0#
+#3291930
+b1 ?
+1#
+#3333600
+0#
+#3375270
+b10 ?
+1#
+#3416940
+0#
+#3458610
+b11 ?
+1#
+#3500280
+0#
+#3541950
+b100 ?
+1#
+#3583620
+0#
+#3625290
+b101 ?
+1#
+#3666960
+0#
+#3708630
+b10 1
+b10 F
+12
+b0 ?
+1#
+#3750300
+0#
+#3791970
+b1 ?
+b10 7
+b10 N
+1#
+#3833640
+0#
+#3875310
+b10 ?
+1#
+#3916980
+0#
+#3958650
+b11 ?
+1#
+#4000320
+0#
+#4041990
+b100 ?
+1#
+#4083660
+0#
+#4125330
+b101 ?
+1#
+#4167000
+0#
+#4208670
+02
+b0 ?
+1#
+#4250340
+0#
+#4292010
+b1 ?
+1#
+#4333680
+0#
+#4375350
+b10 ?
+1#
+#4417020
+0#
+#4458690
+b11 ?
+1#
+#4500360
+0#
+#4542030
+b100 ?
+1#
+#4583700
+0#
+#4625370
+b101 ?
+1#
+#4667040
+0#
+#4708710
+b11 1
+b11 F
+12
+b0 ?
+1#
+#4750380
+0#
+#4792050
+b1 ?
+b11 7
+b11 N
+1#
+#4833720
+0#
+#4875390
+b10 ?
+1#
+#4917060
+0#
+#4958730
+b11 ?
+1#
+#5000400
+0#
+#5042070
+b100 ?
+1#
+#5083740
+0#
+#5125410
+b101 ?
+1#
+#5167080
+0#
+#5208750
+02
+b0 ?
+1#
+#5250420
+0#
+#5292090
+b1 ?
+1#
+#5333760
+0#
+#5375430
+b10 ?
+1#
+#5417100
+0#
+#5458770
+b11 ?
+1#
+#5500440
+0#
+#5542110
+b100 ?
+1#
+#5583780
+0#
+#5625450
+b101 ?
+1#
+#5667120
+0#
+#5708790
+b100 1
+b100 F
+12
+b0 ?
+1#
+#5750460
+0#
+#5792130
+b1 ?
+b100 7
+b100 N
+1#
+#5833800
+0#
+#5875470
+b10 ?
+1#
+#5917140
+0#
+#5958810
+b11 ?
+1#
+#6000480
+0#
+#6042150
+b100 ?
+1#
+#6083820
+0#
+#6125490
+b101 ?
+1#
+#6167160
+0#
+#6208830
+02
+b0 ?
+1#
+#6250500
+0#
+#6292170
+b1 ?
+1#
+#6333840
+0#
+#6375510
+b10 ?
+1#
+#6417180
+0#
+#6458850
+b11 ?
+1#
+#6500520
+0#
+#6542190
+b100 ?
+1#
+#6583860
+0#
+#6625530
+b101 ?
+1#
+#6667200
+0#
+#6708870
+b101 1
+b101 F
+12
+b0 ?
+1#
+#6750540
+0#
+#6792210
+b1 ?
+b101 7
+b101 N
+1#
+#6833880
+0#
+#6875550
+b10 ?
+1#
+#6917220
+0#
+#6958890
+b11 ?
+1#
+#7000560
+0#
+#7042230
+b100 ?
+1#
+#7083900
+0#
+#7125570
+b101 ?
+1#
+#7167240
+0#
+#7208910
+02
+b0 ?
+1#
+#7250580
+0#
+#7292250
+b1 ?
+1#
+#7333920
+0#
+#7375590
+b10 ?
+1#
+#7417260
+0#
+#7458930
+b11 ?
+1#
+#7500600
+0#
+#7542270
+b100 ?
+1#
+#7583940
+0#
+#7625610
+b101 ?
+1#
+#7667280
+0#
+#7708950
+b110 1
+b110 F
+12
+b0 ?
+1#
+#7750620
+0#
+#7792290
+b1 ?
+b110 7
+b110 N
+1#
+#7833960
+0#
+#7875630
+b10 ?
+1#
+#7917300
+0#
+#7958970
+b11 ?
+1#
+#8000640
+0#
+#8042310
+b100 ?
+1#
+#8083980
+0#
+#8125650
+b101 ?
+1#
+#8167320
+0#
+#8208990
+02
+b0 ?
+1#
+#8250660
+0#
+#8292330
+b1 ?
+1#
+#8334000
+0#
+#8375670
+b10 ?
+1#
+#8417340
+0#
+#8459010
+b11 ?
+1#
+#8500680
+0#
+#8542350
+b100 ?
+1#
+#8584020
+0#
+#8625690
+b101 ?
+1#
+#8667360
+0#
+#8709030
+b111 1
+b111 F
+12
+b0 ?
+1#
+#8750700
+0#
+#8792370
+b1 ?
+b111 7
+b111 N
+1#
+#8834040
+0#
+#8875710
+b10 ?
+1#
+#8917380
+0#
+#8959050
+b11 ?
+1#
+#9000720
+0#
+#9042390
+b100 ?
+1#
+#9084060
+0#
+#9125730
+b101 ?
+1#
+#9167400
+0#
+#9209070
+02
+b0 ?
+1#
+#9250740
+0#
+#9292410
+b1 ?
+1#
+#9334080
+0#
+#9375750
+b10 ?
+1#
+#9417420
+0#
+#9459090
+b11 ?
+1#
+#9500760
+0#
+#9542430
+b100 ?
+1#
+#9584100
+0#
+#9625770
+b101 ?
+1#
+#9667440
+0#
+#9709110
+b1000 1
+b1000 F
+12
+b0 ?
+1#
+#9750780
+0#
+#9792450
+b1 ?
+b1000 7
+b1000 N
+1#
+#9834120
+0#
+#9875790
+b10 ?
+1#
+#9917460
+0#
+#9959130
+b11 ?
+1#
+#10000000
